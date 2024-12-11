@@ -1,0 +1,276 @@
+body {
+    margin: 0; 
+    overflow: hidden; 
+    background: #77d0f39f; 
+  }
+  
+  .road {
+    height: 100px;
+    background: #61976a;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .car {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(22, 30, 102);
+    position: absolute;
+    left: -200px; 
+    bottom: 50px;
+    animation: move 10s linear infinite;
+    z-index: 1;
+    border-radius: 10%;
+  }
+  
+  .car::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 30px;
+    background-color:rgba(184, 241, 248, 0.678);
+ 
+    
+  }
+ 
+  .car::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 30px;
+    background-color: rgba(184, 241, 248, 0.678);
+   
+  }
+  
+  .kol1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: -200px;
+    bottom: 40px; 
+    animation: move 10s linear infinite;
+    border-radius: 100%;
+    z-index: 2;
+  }
+
+  .kol2{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: -200px; 
+    bottom: 40px; 
+    animation: move 10s linear infinite;
+    border-radius: 100%;
+    margin-left: 159px;
+    z-index: 2;
+  }
+
+ 
+  @keyframes move {
+    0% { left: -200px; }
+    50% { left: calc(100vw - 250px); }
+    100% { left: -200px; }
+  }
+  
+  .sun {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(240, 215, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+   
+  }
+
+.stvol{
+    width: 50px;
+    height: 450px;
+    background-color: rgb(70, 37, 27);
+    left:20;
+    position: absolute;
+    top: 416px;
+    right: 400px;
+  
+}
+.kron{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(30, 78, 42);
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: -120px;
+    z-index: 1;
+}
+
+.ap1{
+    
+        width: 50px;
+        height: 50px;
+        background-color: rgb(168, 34, 16);
+        border-radius: 50%;
+        position: absolute;
+        top: 200px;
+        right: 50px;
+        z-index: 1;
+}
+.ap2{
+    
+    width: 50px;
+    height: 50px;
+    background-color: rgb(168, 34, 16);
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    z-index: 1;
+}
+.ap3{
+    
+    width: 50px;
+    height: 50px;
+    background-color: rgb(168, 34, 16);
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 1;
+}
+
+.ap4{
+    
+    width: 50px;
+    height: 50px;
+    background-color: rgb(168, 34, 16);
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    right: -70px;
+    z-index: 1;
+}
+
+.ap5{
+    
+    width: 50px;
+    height: 50px;
+    background-color: rgb(168, 34, 16);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    z-index: 1;
+}
+
+.ap6{
+    
+    width: 50px;
+    height: 50px;
+    background-color: rgb(168, 34, 16);
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    right: -60px;
+    z-index: 1;
+}
+
+.house{
+  position: absolute;
+    width: 500px;
+    height: 400px;
+    background-color:rgb(53, 25, 25);
+    bottom: 60px;
+    left: 40px;
+  }
+  .wind1{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color:rgba(123, 193, 250, 0.74);
+    bottom: 100px;
+    left: 60px;
+   
+  }
+
+  .wind2{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color:rgba(123, 193, 250, 0.74);
+    bottom: 100px;
+    left: 350px;
+   
+  }
+
+  .door{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-color:rgba(27, 11, 11, 0.952);
+    bottom: 10px;
+    left: 210px;
+  }
+
+  .top{
+    clip-path: polygon(48% 37%, 0% 100%, 100% 100%);
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background-color:rgb(134, 56, 56);
+    bottom: 400px;
+    left: 0px;
+  }
+
+  .cl1{
+    width: 140px;
+    height: 90px;
+    background-color: rgb(255, 253, 240);
+    border-radius: 100%;
+    position: absolute;
+    top: 90px;
+    right: 50px;
+   
+
+  }
+  .cl2{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(255, 253, 240);
+    border-radius: 100%;
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    
+  }
+  .cl1,.cl2{
+    animation: move 20s linear infinite;
+    position: absolute;
+  }
+
+  
+
+  @keyframes appear {
+    from { opacity: 0; transform: scale(0.1); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  .house,.wind1,.wind2,.door,.top {
+    position: absolute;
+    animation: appear 3s ease-in-out forwards;
+  }
+
+  .stvol,.kron,.ap1,.ap2,.ap3,.ap4,.ap5,.ap6{
+    position: absolute;
+    animation: appear 3s ease-in-out backwards 2s; }
+  .sun{
+    position: absolute;
+    animation: appear 3s ease-in-out forwards;
+  }
